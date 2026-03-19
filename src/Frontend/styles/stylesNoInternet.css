@@ -1,0 +1,37 @@
+#divaudio {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#divvolumen {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#Progress_bar {
+    width: 180px;
+    height: 5px;
+    background-color: lightgray;
+}
+
+#Progress {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    background-color: darkblue;
+    
+}
+
+#puntito {
+	border: 5px solid gray;
+	border-radius: 50%;
+}
+
+

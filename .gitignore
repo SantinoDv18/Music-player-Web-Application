@@ -1,0 +1,9 @@
+pycache/
+.env
+venv/
+*.pyc
+README.html
+src/Backend/media/Canciones
+*.mp3
+*.wav
+!assets/

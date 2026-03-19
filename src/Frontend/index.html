@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de música</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+
+<body id="Page">
+
+    <!-- Audio oculto -->
+    <div id="Contenedor_audio">
+        <audio id="audio" src=""></audio>
+    </div>
+
+    <!-- Reproductor -->
+    <div id="Container_Reproductor">
+
+        <!-- Información de la canción -->
+        <div id="Song_info">
+            <h5 id="Titulo"></h5>
+            <span id="Artista"></span>
+        </div>
+
+        <!-- Portada -->
+        <div id="Portada">
+            <img id="imgPortada" src="media/img/portadaPorDefecto.jpg" alt="Portada">
+        </div>
+
+        <!-- Volumen -->
+        <div id="Volumen">
+            <button class="Botones" id="Boton_volumen">
+                <img id="imgBotonVolumen" src="media/img/Boton_volumen.png" alt="Volumen">
+                <input id='inputControlVolumen' type="range" value="100" min="0" max="100" />
+            </button>
+        </div>
+
+        <!-- Controles -->
+        <div id="Controls">
+
+            <button class="Botones" id="Boton_azar">
+                <img id="imgBotonAzar" src="media/img/Azar_estado_off.png" alt="Azar">
+            </button>
+
+            <button class="Botones" id="Boton_prev">
+                <img id="imgBotonPrev" src="media/img/Boton_prev.png" alt="Anterior">
+            </button>
+
+            <button class="Botones" id="Boton_play">
+                <img id="imgBotonPlay" src="media/img/Boton_play.png" alt="Play">
+                <img id="imgBotonPause" src="media/img/Boton_pause.png" alt="Pause">
+            </button>
+
+            <button class="Botones" id="Boton_next">
+                <img id="imgBotonNext" src="media/img/Boton_next.png" alt="Siguiente">
+            </button>
+
+            <button class="Botones" id="Boton_repetir">
+                <img id="imgBotonRepetir" src="media/img/Repetir_estado_off.png" alt="Repetir">
+            </button>
+
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="Duration">
+
+            <div id="Progress_bar">
+                <div id="Progress"></div>
+            </div>
+
+            <div id="Duracion">
+                <span class="Span_tiempo" id="Tiempo_progresivo">0:00</span>
+                <span class="Span_tiempo" id="Tiempo_final">0:00</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script -->
+    <script src="func/Script.js"></script>
+
+</body>
+</html>
