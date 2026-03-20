@@ -3,10 +3,7 @@ from django.http import JsonResponse
 from .models import Canciones
 
 # Create your views here.
-def index(request):
-    return render(request, 'index.html')
-def noInternet(request):
-    return render(request, 'noInternet.html')
+
 def lista_canciones(request):
     canciones = Canciones.objects.all()
     

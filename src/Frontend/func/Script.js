@@ -38,8 +38,10 @@ let indexCancion = 0;
 let estadoAzar = false;
 let estadoRepetir = false;
 
+
 /* =========================
-   FETCH CANCIONES
+    INICIALIZACIÓN
+========================= */
    fetch("http://127.0.0.1:8000/api/canciones/")
     .then(res => {
         if (!res.ok) {
@@ -56,7 +58,7 @@ let estadoRepetir = false;
         alert('El servidor backend está apagado o no disponible.');
     });
 
-========================= */
+
 
 
 
@@ -216,19 +218,3 @@ function mostrarPause() {
     imgBotonPlay.style.display = "none";
     imgBotonPause.style.display = "flex";
 }
-
-
-/*const canciones = [
-	{titulo: "DtMF 🎵", archivo: "misc/DtMF.mp3"},
-	{titulo: "BOKeTE 🎵", archivo: "misc/BOKeTE.mp3"},
-	{titulo: "BAILE INoLVIDABLE 🎵", archivo: "misc/BAILE INoLVIDABLE.wav"},
-	{titulo: "EoO 🎵", archivo: "misc/EoO.wav"},
-	{titulo: "KETU TeCRÉ 🎵", archivo: "misc/KETU TeCRÉ.wav"},
-	{titulo: "KLOuFRENS 🎵", archivo: "misc/KLOuFRENS.wav"},
-	{titulo: "LA MuDANZA 🎵", archivo: "misc/LA MuDANZA.wav"},
-	{titulo: "NUEVAYoL 🎵", archivo: "misc/NUEVAYoL.wav"},
-	{titulo: "PERFuMITO NUEVO 🎵", archivo: "misc/PERFuMITO NUEVO.wav"},
-	{titulo: "VeLDÁ 🎵", archivo: "misc/VeLDÁ.wav"},
-	{titulo: "VOY A LLeVARTE PA PR 🎵", archivo: "misc/VOY A LLeVARTE PA PR.wav"},
-	{titulo: "WELTiTA 🎵", archivo: "misc/WELTiTA.wav"}
-]*/
