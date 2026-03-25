@@ -95,7 +95,7 @@ The system allows music playback directly from the browser using a JavaScript-ba
 
 ## **Author**
 
-SantinoDv18
+[SantinoDv18](https://www.github.com/SantinoDv18)
 
 ---
 [image1]: ./assets/preview.png
